@@ -19,7 +19,6 @@
 
 /* Calculate F, given L and C */
 double lc2f(double I, double C) {
-
   double F;
 
   F = 1.0 / (2.0 * M_PI * sqrt(I * C));
@@ -28,7 +27,6 @@ double lc2f(double I, double C) {
 
 /* Calculate C, given L and F */
 double lf2c(double I, double F) {
-
   double C;
 
   C = 1 / (pow(2.0 * M_PI * F, 2.0) * I);
@@ -37,7 +35,6 @@ double lf2c(double I, double F) {
 
 /* Calculate L, given C and F */
 double cf2l(double C, double F) {
-
   double I;
 
   I = 1 / (pow(2.0 * M_PI * F, 2.0) * C);
@@ -45,7 +42,6 @@ double cf2l(double C, double F) {
 }
 
 int main(void) {
-
     char answer;
     double frequency;
     double inductance;
@@ -59,6 +55,7 @@ int main(void) {
         answer = toupper(answer);
     }
 
+    /* determine calculation to be made */
     switch(answer) {
         case 'C':
             printf("\nCalculation for capacitance\n");
@@ -86,6 +83,7 @@ int main(void) {
 	    break;
     }
 
+    /* print results */
     printf("\nCapacitance = %.3g\n", capacitance);
     printf("Inductance = %.3g\n", inductance);
     printf("Frequency = %.1f\n", frequency);
