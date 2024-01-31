@@ -1,0 +1,7 @@
+/*
+ * ideas for electronics calculators:
+ *
+ */
+
+LCF/Resonance
+Xc and Xl
