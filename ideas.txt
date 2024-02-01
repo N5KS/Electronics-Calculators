@@ -5,3 +5,6 @@
 
 LCF/Resonance
 Xc and Xl
+BJT transistor biasing using various methods
+Voltage divider
+Power, Voltage, Current, Resistance
