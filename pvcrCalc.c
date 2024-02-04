@@ -17,6 +17,11 @@
 
 int main(void) {
     float power, voltage, current, resistance;
+    char answer;
 
+    printf("Enter first known item (P, V, C, or R): ");
+    scanf("%c", &answer);
+    answer = toupper(answer);
+    printf("You know this item: %c\n", answer);
     return(0);
 }
